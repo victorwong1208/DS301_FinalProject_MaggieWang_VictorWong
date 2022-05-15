@@ -25,21 +25,28 @@ Our python code is initiated in Google Colab(cloud based). In order to execute t
 ## Results
 
 Based on the model evaluation, here are our result:
-For ANNs, we did a grid search on the hyperparameter. The best parameters are:
+
+### For ANNs, we did a grid search on the hyperparameter. The best parameters are:
+
 {'batch_size': 64, 'lr': 0.034646016306089024, 'dropout_proba': 0.08979839550989333}
+
 For test accuracy, we get: 0.9993153330290369
+
 for test f1 score, we get: 0.812533
 
 <img width="715" alt="image" src="https://user-images.githubusercontent.com/67981521/168461304-6d58a7f3-b79f-4359-8e73-f884a2b6679e.png">
 
 
-For XGBoostClassifier, we did a grid search on the hyperparameter. The best parameter is:
+
+
+### For XGBoostClassifier, we did a grid search on the hyperparameter. The best parameter is:
 
 n_estimators=150
 
 For test accuracy, we get:0.999403110845827
 
 for test f1 score, we get:0.821053
+
 
 
 
@@ -53,6 +60,7 @@ for test f1 score, we get:0.806283
 
 
 
+
 For CatBoostClassifier, we fit the model and evaluate the metrics:
 
 For test accuracy, we get:0.9993328885923949
@@ -61,11 +69,16 @@ for test f1 score, we get:0.802083
 
 
 
+
+
 For LightGBMClassifier, we fit the model and evaluate the metrics:
 
 For test accuracy, we get:0.9988237772550121
 
 for test f1 score, we get:0.556291
+
+
+
 
 
 Here, we can see that since test accuracy across the models all give a consistently high value around 0.99, it's of more importance to compare by the f1 score. The graph we generated on F1 score is attached below:
