@@ -24,7 +24,9 @@ Our python code is initiated in Google Colab(cloud based). In order to execute t
 
 ## Results
 
+
 Based on the model evaluation, here are our result:
+
 
 ### For ANNs, we did a grid search on the hyperparameter. The best parameters are:
 
@@ -50,7 +52,7 @@ for test f1 score, we get:0.821053
 
 
 
-For RandomForestClassifier, we did a grid search on the hyperparameter. The best parameter is:
+### For RandomForestClassifier, we did a grid search on the hyperparameter. The best parameter is:
 
 eta=0.1
 
@@ -61,7 +63,7 @@ for test f1 score, we get:0.806283
 
 
 
-For CatBoostClassifier, we fit the model and evaluate the metrics:
+### For CatBoostClassifier, we fit the model and evaluate the metrics:
 
 For test accuracy, we get:0.9993328885923949
 
@@ -71,7 +73,7 @@ for test f1 score, we get:0.802083
 
 
 
-For LightGBMClassifier, we fit the model and evaluate the metrics:
+### For LightGBMClassifier, we fit the model and evaluate the metrics:
 
 For test accuracy, we get:0.9988237772550121
 
@@ -81,16 +83,16 @@ for test f1 score, we get:0.556291
 
 
 
-Here, we can see that since test accuracy across the models all give a consistently high value around 0.99, it's of more importance to compare by the f1 score. The graph we generated on F1 score is attached below:
+### Here, we can see that since test accuracy across the models all give a consistently high value around 0.99, it's of more importance to compare by the f1 score. The graph we generated on F1 score is attached below:
 
 <img width="894" alt="image" src="https://user-images.githubusercontent.com/67981521/168461401-3021650b-c734-4615-b4cf-c9075ab582db.png">
 
 
-The values of f1 score:
+### The values of f1 score:
 
 <img width="507" alt="image" src="https://user-images.githubusercontent.com/67981521/168461517-addbeb2e-2967-4499-a07d-ed9b7898b7ae.png">
 
-Here, by comparing the f1 scores, with consideration on the test accuracy, we can come to an conclusion that for this dataset,XGBoost Classifier has the best performance in f1 score, as our special attention is regarding the False Negative cases. 
+### Here, by comparing the f1 scores, with consideration on the test accuracy, we can come to an conclusion that for this dataset,XGBoost Classifier has the best performance in f1 score, as our special attention is regarding the False Negative cases. 
 
 
 
